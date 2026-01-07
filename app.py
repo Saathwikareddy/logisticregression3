@@ -85,7 +85,7 @@ st.markdown('<div class="subtitle">Machine Learning powered churn analytics</div
 st.markdown('<div class="card">', unsafe_allow_html=True)
 
 # ---------------- LOAD DATA ----------------
-df = pd.read_csv(""C:\Users\saath\Downloads\WA_Fn-UseC_-Telco-Customer-Churn (2).csv"")
+df = pd.read_csv("Churn.csv.csv")
 df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
 df.dropna(inplace=True)
 df['Churn'] = (df['Churn'].str.strip() == 'Yes').astype(int)
