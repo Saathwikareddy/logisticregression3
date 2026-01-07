@@ -10,7 +10,7 @@ scaler = pickle.load(open("scaler.pkl", "rb"))
 st.markdown("""
 <style>
 body {
-    background-color: #f5f7fa;
+    background-color: #5d84bf;
 }
 
 .main {
@@ -31,7 +31,7 @@ body {
 }
 
 .card {
-    background-color: white;
+    background-color: rgb(128, 215, 223);
     padding: 30px;
     border-radius: 16px;
     box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
