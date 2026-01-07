@@ -11,7 +11,7 @@ st.markdown("""
 <style>
 /* Gradient background */
 .stApp {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #1e1e23, #79737f);
     padding: 2rem;
 }
 
@@ -73,6 +73,7 @@ st.markdown("""
     margin-top: 20px;
 }
 </style>
+
 """, unsafe_allow_html=True)
 
 # ---------------- UI ----------------
