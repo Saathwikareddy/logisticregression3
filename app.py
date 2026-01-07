@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, roc_curve, auc
-
+import pandas as pd
 # Load model and scaler
 model = pickle.load(open("churn_model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
