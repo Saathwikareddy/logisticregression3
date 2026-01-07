@@ -9,49 +9,54 @@ scaler = pickle.load(open("scaler.pkl", "rb"))
 # ---------------- CSS ----------------
 st.markdown("""
 <style>
-body {
-    background-color: #f5f7fa;
-}
-
-.main {
+/* Gradient background */
+.stApp {
+    background: linear-gradient(135deg, #667eea, #764ba2);
     padding: 2rem;
 }
 
+/* Title */
 .title {
     text-align: center;
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 700;
-    color: #1f4e79;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
+/* Subtitle */
 .subtitle {
     text-align: center;
-    color: #666;
-    margin-bottom: 30px;
+    color: #e0e0e0;
+    margin-bottom: 40px;
 }
 
+/* Card */
 .card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
-    max-width: 500px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    max-width: 480px;
     margin: auto;
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.15);
 }
 
+/* Button */
 .stButton > button {
-    background-color: #1f4e79;
+    background-color: #667eea;
     color: white;
     font-size: 16px;
-    border-radius: 8px;
-    height: 45px;
+    border-radius: 10px;
+    height: 48px;
     width: 100%;
+    border: none;
 }
 
+/* Result boxes */
 .good {
     background-color: #e6f4ea;
     color: #137333;
-    padding: 15px;
+    padding: 16px;
     border-radius: 10px;
     text-align: center;
     font-size: 18px;
@@ -61,7 +66,7 @@ body {
 .bad {
     background-color: #fdecea;
     color: #a50e0e;
-    padding: 15px;
+    padding: 16px;
     border-radius: 10px;
     text-align: center;
     font-size: 18px;
